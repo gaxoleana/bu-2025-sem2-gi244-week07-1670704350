@@ -3,18 +3,17 @@ using UnityEngine;
 public class MoveLeft : MonoBehaviour
 {
     public float speed = 10f;
+    private PlayerController player; //มีไว้เก็บข้อมูล
 
-    // Start is called once before the first execution of Update after the MonoBehaviour is created
     void Start()
     {
-
+        player = GameObject.Find("Player").GetComponent<PlayerController>(); //ใน player จะหา "Player" แล้วหา Component สคริป PlayerController
     }
 
-    // Update is called once per frame
     void Update()
     {
-        GameObject go = GameObject.Find("Player");
-        PlayerController player = go.GetComponent<PlayerController>();
+        //GameObject go = GameObject.Find("Player");
+        //PlayerController player = go.GetComponent<PlayerController>();
         if (!player.isGameOver)
         {
             transform.Translate(speed * Time.deltaTime * Vector3.left);
