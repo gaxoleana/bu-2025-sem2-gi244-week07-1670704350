@@ -150,6 +150,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   spawnPoint: {fileID: 1183671265}
   obstaclePrefab: {fileID: 2194018054387032424, guid: f80c07ecc0ac61b44a73879fd9b1f087, type: 3}
+  player: {fileID: 1667492346595872697}
 --- !u!4 &132895512
 Transform:
   m_ObjectHideFlags: 0
@@ -723,6 +724,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   jumpForce: 20
   gravityMultiplier: 7
+  isGameOver: 0
 --- !u!54 &1667492346595872698
 Rigidbody:
   m_ObjectHideFlags: 0

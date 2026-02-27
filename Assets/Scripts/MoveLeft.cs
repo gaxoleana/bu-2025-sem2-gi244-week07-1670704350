@@ -13,6 +13,11 @@ public class MoveLeft : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-        transform.Translate(speed * Time.deltaTime * Vector3.left);
+        GameObject go = GameObject.Find("Player");
+        PlayerController player = go.GetComponent<PlayerController>();
+        if (!player.isGameOver)
+        {
+            transform.Translate(speed * Time.deltaTime * Vector3.left);
+        }
     }
 }
