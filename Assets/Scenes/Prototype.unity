@@ -504,7 +504,7 @@ GameObject:
   - component: {fileID: 2014335012}
   m_Layer: 9
   m_Name: Ground
-  m_TagString: Untagged
+  m_TagString: Ground
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -685,8 +685,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: f8aa7337a3eba8d45a61a233ca0c9511, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  jumpForce: 10
-  gravityMultiplier: 1
+  jumpForce: 20
+  gravityMultiplier: 7
 --- !u!54 &1667492346595872698
 Rigidbody:
   m_ObjectHideFlags: 0
@@ -733,8 +733,8 @@ BoxCollider:
   m_ProvidesContacts: 0
   m_Enabled: 1
   serializedVersion: 3
-  m_Size: {x: 1, y: 1, z: 1}
-  m_Center: {x: 0, y: 0, z: 0}
+  m_Size: {x: 1.0471959, y: 3.039061, z: 1.1450055}
+  m_Center: {x: 0.0018149614, y: 1.5072904, z: 0.018643498}
 --- !u!1660057539 &9223372036854775807
 SceneRoots:
   m_ObjectHideFlags: 0
